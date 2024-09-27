@@ -14,6 +14,7 @@ Each group works on their specific branch, and the final step is to merge all th
 **Clone the Repository (For all groups)**
 
 First, clone the repository locally to begin work:
+
 _git clone https://github.com/dhruv-pithadia/MediMentor.git
 
 cd MediMentor_
@@ -22,11 +23,14 @@ cd MediMentor_
 
 Step 1: Switch to the Group 1 Branch
 Switch to the group1-preprocessing branch and ensure it’s up to date:
+
 _git checkout group1-preprocessing
 git pull origin group1-preprocessing_
 
 Step 2: Add Preprocessing Scripts
+
 After writing your preprocessing scripts (in the preprocessing/ or scripts/ folder), stage and commit them:
+
 _git add .
 git commit -m "Add preprocessing scripts"
 git push origin group1-preprocessing_
@@ -35,16 +39,22 @@ git push origin group1-preprocessing_
 **For Group 2 (Model Training Team)**
 
 Step 1: Switch to the Group 2 Branch
+
 Switch to the group2-model-training branch:
+
 _git checkout group2-model-training
 git pull origin group2-model-training_
 
 Step 2: Merge Preprocessing Data from Group 1
+
 Before starting model training, merge the pre-processed data from group1-preprocessing:
+
 _git merge group1-preprocessing_
 
 If there are conflicts, Git will prompt you to resolve them manually. After resolving any conflicts, stage the changes:
+
 _git add .
+
 git commit -m "Resolved merge conflicts between group1-preprocessing and group2-model-training"_
 
 Step 3: Add Model Training Scripts
