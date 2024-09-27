@@ -11,7 +11,7 @@ This project is divided into three main groups:
 
 Each group works on their specific branch, and the final step is to merge all the work into the main branch. Below are the step-by-step instructions for each group.
 
-Clone the Repository (For all groups)
+**Clone the Repository (For all groups)**
 
 First, clone the repository locally to begin work:
 git clone https://github.com/dhruv-pithadia/MediMentor.git
