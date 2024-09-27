@@ -14,60 +14,60 @@ Each group works on their specific branch, and the final step is to merge all th
 **Clone the Repository (For all groups)**
 
 First, clone the repository locally to begin work:
-git clone https://github.com/dhruv-pithadia/MediMentor.git
-cd MediMentor
+_git clone https://github.com/dhruv-pithadia/MediMentor.git
+cd MediMentor_
 
-For Group 1 (Preprocessing Team)
+**For Group 1 (Preprocessing Team)**
 
 Step 1: Switch to the Group 1 Branch
 Switch to the group1-preprocessing branch and ensure it’s up to date:
-git checkout group1-preprocessing
-git pull origin group1-preprocessing
+_git checkout group1-preprocessing
+git pull origin group1-preprocessing_
 
 Step 2: Add Preprocessing Scripts
 After writing your preprocessing scripts (in the preprocessing/ or scripts/ folder), stage and commit them:
-git add .
+_git add .
 git commit -m "Add preprocessing scripts"
-git push origin group1-preprocessing
+git push origin group1-preprocessing_
 
 
-For Group 2 (Model Training Team)
+**For Group 2 (Model Training Team)**
 
 Step 1: Switch to the Group 2 Branch
 Switch to the group2-model-training branch:
-git checkout group2-model-training
-git pull origin group2-model-training
+_git checkout group2-model-training
+git pull origin group2-model-training_
 
 Step 2: Merge Preprocessing Data from Group 1
 Before starting model training, merge the pre-processed data from group1-preprocessing:
-git merge group1-preprocessing
+_git merge group1-preprocessing_
 
 If there are conflicts, Git will prompt you to resolve them manually. After resolving any conflicts, stage the changes:
-git add .
-git commit -m "Resolved merge conflicts between group1-preprocessing and group2-model-training"
+_git add .
+git commit -m "Resolved merge conflicts between group1-preprocessing and group2-model-training"_
 
 Step 3: Add Model Training Scripts
 After writing your model training scripts (in the models/ or scripts/ folder), stage and commit them:
-git add .
+_git add .
 git commit -m "Add model training code"
-git push origin group2-model-training
+git push origin group2-model-training_
 
 
 
-For Group 3 (Evaluation and Tuning Team)
+**For Group 3 (Evaluation and Tuning Team)**
 
 Step 1: Switch to the Group 3 Branch
 Switch to the group3-evaluation-tuning branch:
-git checkout group3-evaluation-tuning
-git pull origin group3-evaluation-tuning
+_git checkout group3-evaluation-tuning
+git pull origin group3-evaluation-tuning_
 
 Step 2: Merge Model Data from Group 2
 Before evaluating the model, merge the trained model from group2-model-training:
-git merge group2-model-training
+_git merge group2-model-training_
 
 If there are conflicts, resolve them manually and stage the resolved files:
-git add .
-git commit -m "Resolved merge conflicts between group2-model-training and group3-evaluation-tuning"
+_git add .
+git commit -m "Resolved merge conflicts between group2-model-training and group3-evaluation-tuning"_
 
 Step 3: Add Evaluation and Tuning Scripts
 After writing your evaluation and tuning scripts (in the evaluation/ folder), stage and commit them:
