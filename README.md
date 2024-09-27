@@ -15,6 +15,7 @@ Each group works on their specific branch, and the final step is to merge all th
 
 First, clone the repository locally to begin work:
 _git clone https://github.com/dhruv-pithadia/MediMentor.git
+
 cd MediMentor_
 
 **For Group 1 (Preprocessing Team)**
